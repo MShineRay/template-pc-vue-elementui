@@ -102,6 +102,8 @@ windows：c:\windows\system32\drivers\etc
 - [接口文档]()
 - [项目文档]()
 - [项目规范]()
+  - [css](./doc/css.md)
+  - [js](./doc/js.md)
 - [重要的信息]()
 
 
@@ -124,7 +126,36 @@ windows：c:\windows\system32\drivers\etc
 
 
 ## TODO
+- 1、将test组建抽离出来，避免被打包
+- 2、将相关lib，以node_modules方式发布、引入
+    - feAxios
+    - feTools
+      - 基于 lodash进行扩展，支持 tree-shaking
+      - 支持 配置化打包 参考element-ui
+    - feConfig
+    - feLog
+    - feMockServer
+        - 解析mock
+        - 生成mock文件
+    - feProxy
+    - feDebugger
+        - 基于 vconsle 进行扩展，结合 feLog，将错误信息发送到 node服务，方便排查
+        -
+- 3、支持使用feCli的方式，升级单功能文件
+    - feAxios
+    - feTools
+- 4、公共的css文件
+    - reset.css
+    - base.css
+    - mixins.css
+- 5、公共的js
 
+- 6、梳理相关规范
+    - css
+    - js
+    - git
+    - code review
+    
 ## Q&A
 - Q1、问题描述
     - A1、解决方案
