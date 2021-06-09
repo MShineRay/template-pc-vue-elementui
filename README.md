@@ -1,7 +1,7 @@
 # 项目名称
 
-模版名称：template-pc-vue2-elementui(勿删)
-模板版本：v0.0.1(勿删)
+- 模版名称：template-pc-vue2-elementui(勿删)
+- 模板版本：v0.0.1(勿删)
 
 ## 项目描述
 
