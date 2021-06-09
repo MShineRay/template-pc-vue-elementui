@@ -64,21 +64,6 @@ windows：c:\windows\system32\drivers\etc
   npm run lint
   ```
 
-- 搭建
-  ```
-    npm install
-    其他设置
-  ```
-
-- 启动
-  ```
-    npm run dev
-  ```
-- 构建部署
-  ```
-    npm run build
-  ```
-
 
 - 测试环境
     - test
