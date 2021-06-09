@@ -1,6 +1,7 @@
 # 项目名称
 
-模板版本：v0.0.1
+- 模版名称：template-pc-vue2-elementui(勿删)
+- 模板版本：v0.0.1(勿删)
 
 ## 项目描述
 
@@ -61,21 +62,6 @@ windows：c:\windows\system32\drivers\etc
 - Lints and fixes files
   ```
   npm run lint
-  ```
-
-- 搭建
-  ```
-    npm install
-    其他设置
-  ```
-
-- 启动
-  ```
-    npm run dev
-  ```
-- 构建部署
-  ```
-    npm run build
   ```
 
 
