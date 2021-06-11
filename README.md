@@ -127,7 +127,7 @@ windows：c:\windows\system32\drivers\etc
         - 生成mock文件
     - feProxy
     - feDebugger
-        - 基于 vconsle 进行扩展，结合 feLog，将错误信息发送到 node服务，方便排查
+        - 基于 vconsole 进行扩展，结合 feLog，将错误信息发送到 node服务，方便排查
         -
 - 3、支持使用feCli的方式，升级单功能文件
     - feAxios
