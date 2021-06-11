@@ -19,10 +19,11 @@ process.argv.forEach(function (value, index) {
 let envConf = feServerConfig[hostToEnv[_host]]
 module.exports = function () {
   let proxyObj = {
-    'default': { //初始化配置 防止proxyObj为空时格式异常
+    default: {
+      //初始化配置 防止proxyObj为空时格式异常
       target: 'http://localhost',
-      pathRewrite:{}
-    }
+      pathRewrite: {},
+    },
   }
   if (envConf && envConf.common) {
     Object.keys(envConf.common).forEach(function (key) {
@@ -32,11 +33,11 @@ module.exports = function () {
         target: 'http:' + envConf.common[key].replace(/http:|https:/, ''),
         ws: true,
         changeOrigin: true,
-        pathRewrite: {}
+        pathRewrite: {},
       }
-      console.log("proxyObj1:",proxyObj)
+      console.log('proxyObj1:', proxyObj)
       proxyObj[_key]['pathRewrite']['^' + _key] = ''
-      console.log("proxyObj2:",proxyObj)
+      console.log('proxyObj2:', proxyObj)
     })
   }
   return proxyObj

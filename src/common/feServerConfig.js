@@ -4,12 +4,13 @@
  * @type {object}
  */
 const API_MOCK_PHP = 'fe-mock-php' // mock=>调用在服务器上的PHP程序来读取模拟数据
-const API_PROXY = '/fe-api-proxy' //通过vueCLI自身携带的代理功能来进行接口访问达到跨域成功
+// eslint-disable-next-line
+const API_PROXY = '/fe-api-proxy' // 通过vueCLI自身携带的代理功能来进行接口访问达到跨域成功
 const API_LOCAL = '/fe-api-local' // 调用本地nodejs程序来读取模拟数据
-let WS_PROTOCOL, HTTP_PROTOCOL
+let WS_PROTOCOL, HTTP_PROTOCOL// eslint-disable-line
 try {
-  WS_PROTOCOL = window.location.protocol === 'https:' ? 'wss:' : 'ws:'
-  HTTP_PROTOCOL = window.location.protocol === 'https:' ? 'https:' : 'http:'
+  WS_PROTOCOL = window.location.protocol === 'https:' ? 'wss:' : 'ws:'// eslint-disable-line
+  HTTP_PROTOCOL = window.location.protocol === 'https:' ? 'https:' : 'http:'// eslint-disable-line
 } catch (error) {
   WS_PROTOCOL = 'ws:'
   HTTP_PROTOCOL = 'http:'
@@ -18,60 +19,58 @@ try {
 let online = {
   common: {},
   special: {
-    debug: false,// 调试模式
-  }
+    debug: false, // 调试模式
+  },
 }
 
 let mock = {
   common: {
     shareUrl: API_MOCK_PHP + '/share',
+    locWSUrl: WS_PROTOCOL,
   },
   special: {
-    debug: true,// 调试模式
-  }
+    debug: true, // 调试模式
+  },
 }
 
 let dev = {
   common: {},
   special: {
-    debug: true,// 调试模式
-  }
+    debug: true, // 调试模式
+  },
 }
 let test = {
   common: {},
   special: {
-    debug: true,// 调试模式
-  }
+    debug: true, // 调试模式
+  },
 }
 let fat = {
   common: {},
   special: {
-    debug: true,// 调试模式
-  }
+    debug: true, // 调试模式
+  },
 }
 
 let sit = {
   common: {},
   special: {
-    debug: true,// 调试模式
-
-  }
+    debug: true, // 调试模式
+  },
 }
 let uat = {
   common: {},
   special: {
-    debug: true,// 调试模式
-
-  }
+    debug: true, // 调试模式
+  },
 }
 // 准生产环境、灰度环境
 let pre = {
   common: {},
   special: {
-    debug: true,// 调试模式
-  }
+    debug: true, // 调试模式
+  },
 }
-
 
 let nodeProxyApi = {}
 
@@ -79,49 +78,50 @@ let locMock = {
   common: {
     shareUrl: API_LOCAL + '/share',
   },
-  special: {}
+  special: {},
 }
 let locDev = {
   common: nodeProxyApi,
-  special: {}
+  special: {},
 }
 let locTest = {
   common: nodeProxyApi,
-  special: {}
+  special: {},
 }
 let locFat = {
   common: nodeProxyApi,
-  special: {}
+  special: {},
 }
 let locSit = {
   common: nodeProxyApi,
-  special: {}
+  special: {},
 }
 
 let locPre = {
   common: nodeProxyApi,
-  special: {}
+  special: {},
 }
 
 let locUat = {
   common: nodeProxyApi,
-  special: {}
+  special: {},
 }
 
 const feServerConfig = {
   online,
+  mock,
   dev,
   test,
+  fat,
   sit,
   pre,
   uat,
-  mock,
+  locMock,
   locDev,
   locTest,
+  locFat,
   locSit,
   locPre,
   locUat,
-  locMock
 }
-console.log('feServerConfig:', feServerConfig)
 module.exports = feServerConfig

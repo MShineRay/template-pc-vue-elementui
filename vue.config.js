@@ -43,8 +43,8 @@ module.exports = {
       // the source template
       template: 'public/index.html',
       // output as dist/index.html
-      filename: 'index.html'
-    }
+      filename: 'index.html',
+    },
   },
 
   // lintOnSave：{ type:Boolean default:true } 问你是否使用eslint
@@ -65,7 +65,7 @@ module.exports = {
     proxy: feApiProxy(),
     before(app) {
       feApiLocal(app)
-    }
+    },
   },
   // webpack的配置在这个属性里修改configureWebpack
   configureWebpack: config => {
@@ -76,7 +76,7 @@ module.exports = {
       config.plugins.push(
         new webpack.DllReferencePlugin({
           context: process.cwd(),
-          manifest: require(dllPath + '/vendor-manifest.json')
+          manifest: require(dllPath + '/vendor-manifest.json'),
         })
       )
       config.plugins.push(
@@ -86,7 +86,7 @@ module.exports = {
           // dll 引用路径
           publicPath: linkPath,
           // dll最终输出的目录
-          outputPath: linkPath
+          outputPath: linkPath,
         })
       )
 
@@ -99,5 +99,4 @@ module.exports = {
   },
   // 第三方插件配置
   // pluginOptions: {},
-
 }
