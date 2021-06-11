@@ -28,16 +28,13 @@ module.exports = function () {
   if (envConf && envConf.common) {
     Object.keys(envConf.common).forEach(function (key) {
       let _key = FE_PROXY + '/' + key.slice(0, -3) + '/'
-      console.log('_key:', _key)
       proxyObj[_key] = {
         target: 'http:' + envConf.common[key].replace(/http:|https:/, ''),
         ws: true,
         changeOrigin: true,
         pathRewrite: {},
       }
-      console.log('proxyObj1:', proxyObj)
       proxyObj[_key]['pathRewrite']['^' + _key] = ''
-      console.log('proxyObj2:', proxyObj)
     })
   }
   return proxyObj
