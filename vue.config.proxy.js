@@ -4,6 +4,7 @@ const hostToEnv = {
   'mock.local.fe.cn': 'locMock',
   'dev.local.fe.cn': 'locDev',
   'test.local.fe.cn': 'locTest',
+  'fat.local.fe.cn': 'locFat',
   'sit.local.fe.cn': 'locSit',
   'uat.local.fe.cn': 'locUat',
   'pre.local.fe.cn': 'locPre',

@@ -43,6 +43,12 @@ let test = {
     debug: true,// 调试模式
   }
 }
+let fat = {
+  common: {},
+  special: {
+    debug: true,// 调试模式
+  }
+}
 
 let sit = {
   common: {},
@@ -69,11 +75,21 @@ let pre = {
 
 let nodeProxyApi = {}
 
+let locMock = {
+  common: {
+    shareUrl: API_LOCAL + '/share',
+  },
+  special: {}
+}
 let locDev = {
   common: nodeProxyApi,
   special: {}
 }
 let locTest = {
+  common: nodeProxyApi,
+  special: {}
+}
+let locFat = {
   common: nodeProxyApi,
   special: {}
 }
@@ -92,12 +108,6 @@ let locUat = {
   special: {}
 }
 
-let locMock = {
-  common: {
-    shareUrl: API_LOCAL + '/share',
-  },
-  special: {}
-}
 const feServerConfig = {
   online,
   dev,
