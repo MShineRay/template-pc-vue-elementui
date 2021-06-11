@@ -16,7 +16,6 @@ process.argv.forEach(function (value, index) {
   }
 })
 let envConf = feServerConfig[hostToEnv[_host]]
-console.log('envConf:',envConf)
 module.exports = function () {
   let proxyObj = {
     'default': { //初始化配置 防止proxyObj为空时格式异常

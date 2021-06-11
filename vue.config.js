@@ -9,7 +9,6 @@ const pkg = require('./package.json')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const dllPath = './' + pkg.dllPath
 const linkPath = '/' + pkg.dllPath.split('/')[1]
-// const makeInfo = require('./mack.info.js')
 
 /**
  * @fix (node:5328) MaxListenersExceededWarning: Possible EventEmitter memory leak detected.
@@ -21,7 +20,7 @@ require('events').EventEmitter.defaultMaxListeners = 0
  * 根据分支来开启sourcemap
  * deploy/q、master为生产分支，不开启
  */
-const fs = require('fs')
+// const fs = require('fs')
 let IS_PRODUCTIONSOURCEMAP = true
 // const isGitDir = fs.statSync('./.git')
 // if (isGitDir) {

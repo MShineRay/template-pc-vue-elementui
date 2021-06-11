@@ -2,7 +2,7 @@
   "name": "template-pc-vue2-elementui",
   "version": "0.0.1",
   "templateName": "template-pc-vue2-elementui",
-   "templateVersion": "0.0.1",
+  "templateVersion": "0.0.1",
   "private": true,
   "scripts": {
     "mock": "vue-cli-service serve --host mock.local.fe.cn --port 50010 --open",
