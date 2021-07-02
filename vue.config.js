@@ -1,5 +1,6 @@
 const pkg = require('./package.json')
 process.env.VUE_APP_FEBUILDTIME = new Date().getTime()
+process.env.VUE_APP_FEBUILDTIMEX = new Date()
 process.env.VUE_APP_FEPROJECTNAME = pkg.name
 const feApiLocal = require('./fe-service/fe-api-local/index.js')
 const feApiProxy = require('./vue.config.proxy')

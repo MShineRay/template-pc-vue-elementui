@@ -1,7 +1,7 @@
 .DS_Store
-node_modules
-/dist
-
+.svn
+.git
+node_modules/
 
 # local env files
 .env.local
@@ -25,16 +25,6 @@ pnpm-debug.log*
 # VS Code
 .vscode/
 
-.svn
-.git
-node_modules/
-dist/
-wwwroot/
-build/
-
-# 排除所有.开头的隐藏文件
-.*
-
 # Next.js build output
 .next
 out
@@ -44,7 +34,6 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-
 
 # vuepress build output
 .vuepress/dist
@@ -58,3 +47,7 @@ out
 
 doc/
 tests/
+
+dist/
+wwwroot/
+build/

@@ -17,7 +17,11 @@ try {
 }
 
 let online = {
-  common: {},
+  common: {
+    shareUrl: '//www.test.com',
+    share2Url: HTTP_PROTOCOL + '//www.test2.com',
+    share3Url: 'http://www.test2.com',
+  },
   special: {
     debug: false, // 调试模式
   },
@@ -72,7 +76,9 @@ let pre = {
   },
 }
 
-let nodeProxyApi = {}
+let nodeProxyApi = {
+// shareUrl: API_PROXY + '/share',
+}
 
 let locMock = {
   common: {
