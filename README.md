@@ -1,7 +1,5 @@
 # 项目名称
 
-- 模版名称：template-pc-vue2-elementui(勿删)
-- 模板版本：v0.0.1(勿删)
 
 ## 项目描述
 
@@ -64,7 +62,6 @@ windows：c:\windows\system32\drivers\etc
   npm run lint
   ```
 
-
 - 测试环境
     - test
         - 测试地址
@@ -96,7 +93,9 @@ windows：c:\windows\system32\drivers\etc
 - 项目规范
   - [css](./doc/css.md)
   - [js](./doc/js.md)
-- [重要的信息]()
+  - [CommitLint](./doc/CommitLint.md)
+  - [vant](./doc/vant.md)
+- 重要的信息
 
 
 ## 相关人员
@@ -115,7 +114,6 @@ windows：c:\windows\system32\drivers\etc
 ---|---|---|---
 1.0.1  | 模块、bug、功能描述 | 2021-02-24 | xxx
 1.0.0  | 模块、bug、功能描述 | 2021-02-02 | xxx
-
 
 ## TODO
 - 1、将test组建抽离出来，避免被打包

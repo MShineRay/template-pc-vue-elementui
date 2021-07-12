@@ -1,7 +1,7 @@
 .DS_Store
-.svn
-.git
-node_modules/
+node_modules
+/dist
+
 
 # local env files
 .env.local
@@ -22,6 +22,8 @@ pnpm-debug.log*
 *.sln
 *.sw?
 
+.svn
+.git
 # VS Code
 .vscode/
 
