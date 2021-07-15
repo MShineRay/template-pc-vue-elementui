@@ -13,7 +13,7 @@
  *   success demo:
  *    git commit -m 'test: 提交信息详情'
  *
- *   error demo
+ *   error demo:
  *    git commit -m 'test：提交信息'
  *    git commit -m 'test:提交信息'
  *
