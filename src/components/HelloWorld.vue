@@ -90,6 +90,11 @@ export default {
   props: {
     msg: String,
   },
+  methods: {
+    dd() {
+      console.log()
+    },
+  },
 }
 </script>
 
