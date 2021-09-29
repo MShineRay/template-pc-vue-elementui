@@ -3,7 +3,7 @@ const webpack = require('webpack')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const pkg = require('./package.json')
 const TerserPlugin = require('terser-webpack-plugin')
-const makeInfo = require('./mack.info.js')
+// const makeInfo = require('./mack.info.js')
 const dllPath = pkg.dllPath
 
 module.exports = {
@@ -23,7 +23,7 @@ module.exports = {
       name: '[name]_[hash]',
       context: process.cwd(),
     }),
-    new webpack.BannerPlugin(makeInfo),
+    // new webpack.BannerPlugin(makeInfo),
   ],
   optimization: {
     minimizer: [

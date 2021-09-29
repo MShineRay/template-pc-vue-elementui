@@ -4,7 +4,7 @@ process.env.VUE_APP_FEBUILDTIMEX = new Date()
 process.env.VUE_APP_FEPROJECTNAME = pkg.name
 const feApiLocal = require('./fe-service/fe-api-local/index.js')
 const feApiProxy = require('./vue.config.proxy')
-const webpack = require('webpack')
+// const webpack = require('webpack')
 const path = require('path')
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin')
 
@@ -75,12 +75,12 @@ module.exports = {
       config.devtool = 'source-map'
       // mutate config for production...
     } else {
-      config.plugins.push(
-        new webpack.DllReferencePlugin({
-          context: process.cwd(),
-          manifest: require(dllPath + '/vendor-manifest.json'),
-        })
-      )
+      // config.plugins.push(
+      //   new webpack.DllReferencePlugin({
+      //     context: process.cwd(),
+      //     manifest: require(dllPath + '/vendor-manifest.json'),
+      //   })
+      // )
       config.plugins.push(
         new AddAssetHtmlPlugin({
           // dll文件位置
