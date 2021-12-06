@@ -7,6 +7,6 @@ let install = function install(Vue) {
   Vue.use(ElementUI)
 }
 let theme = {
-  install: install,
+  install: install
 }
 export default theme

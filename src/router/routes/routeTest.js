@@ -10,6 +10,6 @@ export default [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "test" */ '@/views-test/Test.vue'), // 异步加载、模块分组打包
-  },
+    component: () => import(/* webpackChunkName: "test" */ '@/views-test/Test.vue') // 异步加载、模块分组打包
+  }
 ]
