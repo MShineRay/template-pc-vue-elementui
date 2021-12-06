@@ -1,8 +1,8 @@
-# 项目名称
+# project name
 
-## 项目描述
+## project description
 
-## 项目目录结构
+## project dir 
   ```
   ./
       ├── .husky/  
@@ -30,8 +30,8 @@
       ├── README.md
       └── vue.config.js             -- 配置文件 **不允许**私自修改
   ```
-## 环境
-- 配置hosts
+## environment
+- hosts
   ```
   host文件位置：
   mac：sudo vim /etc/hosts
@@ -77,7 +77,7 @@
   npm run lint
   ```
 
-- 测试环境
+- test env
     - test
         - 测试地址
         - 测试数据
@@ -91,7 +91,7 @@
         - 测试地址
         - 测试数据
 
-- 生产环境
+- production
     - 地址
     - 数据
 

@@ -45,8 +45,8 @@ module.exports = {
       // the source template
       template: 'public/index.html',
       // output as dist/index.html
-      filename: 'index.html',
-    },
+      filename: 'index.html'
+    }
   },
 
   // lintOnSave：{ type:Boolean default:true } 问你是否使用eslint
@@ -67,7 +67,7 @@ module.exports = {
     proxy: feApiProxy(),
     before(app) {
       feApiLocal(app)
-    },
+    }
   },
   // webpack的配置在这个属性里修改configureWebpack
   configureWebpack: config => {
@@ -88,7 +88,7 @@ module.exports = {
           // dll 引用路径
           publicPath: linkPath,
           // dll最终输出的目录
-          outputPath: linkPath,
+          outputPath: linkPath
         })
       )
 
@@ -103,10 +103,10 @@ module.exports = {
         'vue-router': 'VueRouter',
         // 'vuex': 'Vuex',
         // 'axios': 'axios',
-        'vue-i18n': 'VueI18n',
+        'vue-i18n': 'VueI18n'
       }
     }
-  },
+  }
   // 第三方插件配置
   // pluginOptions: {},
 }
